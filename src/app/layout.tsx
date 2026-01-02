@@ -29,7 +29,7 @@ export default function RootLayout({
       <body className="bg-black text-white">
         <Header
           name = "Anadi Aakar Dewan"
-          githubUrl = "https://github.com/your-username"
+          githubUrl = "https://github.com/anadiaakar"
           linkedinUrl = "https://www.linkedin.com/in/anadi-aakar-dewan-5087ba134/"
           email = "adewan9@asu.edu"
           resumePath = "/assets/resume.pdf"
