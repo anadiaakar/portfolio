@@ -407,9 +407,6 @@ export const timeline: TimelineItem[] = [
       "Led office hours and debugging sessions; improved student conceptual clarity and assignment performance.",
       "Graded programming projects and gave feedback on correctness, style, and problem-solving approach.",
     ],
-    links: [
-      { label: "LinkedIn", href: "https://www.linkedin.com/in/anadi-aakar-dewan-5087ba134/" },
-    ],
   },
 
   // =========================
