@@ -477,4 +477,43 @@ export const timeline: TimelineItem[] = [
     ],
     // links: [{ label: "GitHub", href: "..." }],
   },
+  {
+    id: "proj-genai-knowledge-assistant",
+    type: "project",
+    startDate: "2026-03",
+    title: "GenAI Knowledge Assistant (RAG Chatbot)",
+    org: "Personal Project",
+    summary:
+      "Built and continue to expand a multi-document RAG chatbot that supports PDF upload, hybrid retrieval, source-grounded answering, session-based chat memory, and document critique workflows.",
+    tech: [
+      "Python",
+      "FastAPI",
+      "FAISS",
+      "Sentence Transformers",
+      "Gemini",
+      "RAG",
+      "PDF Parsing",
+      "JSON",
+      "Prompt Engineering",
+    ],
+    filterTech: ["Backend", "ML", "Data"],
+    problem:
+      "General chatbots often hallucinate and cannot reliably answer questions grounded in uploaded documents or support multi-turn document analysis.",
+    solution:
+      "Built a modular FastAPI-based GenAI assistant that ingests PDFs, extracts and chunks text, generates embeddings, performs hybrid retrieval over multiple documents, and uses Gemini for grounded generation. Extended it into a chatbot with session history, history-aware retrieval, direct vs retrieval vs critique routing, and document-improvement feedback based on retrieved context.",
+    highlights: [
+      "Implemented multi-document PDF ingestion, chunking, embedding generation, and FAISS-based semantic search.",
+      "Added hybrid retrieval combining semantic and keyword search for better relevance on exact terms and domain-specific phrases.",
+      "Built grounded answer generation with source attribution at document and chunk level.",
+      "Added persistent storage for vector index and chunk metadata across backend restarts.",
+      "Extended the RAG pipeline into a chatbot with session-based history, multi-turn context handling, and history-aware retrieval.",
+      "Introduced three response modes: factual retrieval, direct answering, and document critique for improvement suggestions.",
+      "Currently iterating on the system with plans for frontend chat UI, smarter query rewriting, streaming responses, and stronger retrieval evaluation.",
+    ],
+    impact: [
+      "Turned a single-turn document QA pipeline into an interactive multi-turn chatbot for grounded document understanding.",
+      "Improved explainability and trust by returning source-linked answers and supporting document-aware critique workflows.",
+      "Created a strong end-to-end GenAI portfolio project covering ingestion, retrieval, prompt design, conversational memory, and system architecture.",
+    ],
+  },
 ];
