@@ -10,7 +10,7 @@ type HeaderProps = {
 
 export default function Header({
   name = "Anadi Aakar Dewan",
-  githubUrl = "https://github.com/your-username",
+  githubUrl = "https://github.com/anadidewan",
   linkedinUrl = "https://www.linkedin.com/in/anadi-aakar-dewan-5087ba134/",
   email = "adewan9@asu.edu",
   resumePath = "/assets/resume.pdf",
